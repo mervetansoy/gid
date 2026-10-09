@@ -1,1 +1,1 @@
-Görüntü İşleme Teknikleri haftalık ders kodları
+Görüntü İşleme Teknikleri dersi haftalık ders kodları
