@@ -6,7 +6,7 @@ def canny_demo(image):
     edges = cv.Canny(gray, 50, 150, apertureSize=3)
     return edges
 
-src = cv.imread("1.jpg")
+src = cv.imread("3.jpg")
 if src is None:
     print("Goruntu okunamadi!")
     exit()
