@@ -8,14 +8,14 @@ def add_salt_pepper_noise(image):
     cols = np.random.randint(0, w, nums, dtype=np.int32)
     for i in range(nums):
         if i % 2 == 1:
-            image[rows[i], cols[i]] = (255, 255, 255)
+            image[rows[i], cols[i]] = (0, 0, 255)
         else:
-            image[rows[i], cols[i]] = (0, 0, 0)
+            image[rows[i], cols[i]] = (255, 0, 0)
     return image
 
 src = cv.imread("resjpg.jpg")
 if src is None:
-    raise FileNotFoundError("resjpg.jpg dosyası bulunamadı!")
+    raise FileNotFoundError("resjpg.jpg dosyasi bulunamadi!")
 h, w = src.shape[:2]
 copy = np.copy(src)
 copy = add_salt_pepper_noise(copy)
